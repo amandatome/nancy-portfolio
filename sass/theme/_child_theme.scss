@@ -1,10 +1,43 @@
-.navbar {
-  color: #000 !important;
+.navbar-light .navbar-nav .nav-link {
+  color: $background!important;
+  font-size: 20px;
 }
 
-.navbrand {
+.navbar-brand {
   font-family: "Quicksand";
-  font-size: 80px;
+  color: $background!important;
+  line-height: 2rem;
+}
+
+a[title='Nancy Johnston']{
+  font-weight: 800;
+  font-size: 40px;
+  font-family: 'Trade Winds';
+}
+
+.tagline {
+  font-size: 30px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 248, 237, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $background;
+} 
+
+.active {
+  border-bottom: solid 2px $background;  
+}
+
+li {
+  &:hover  {
+    &:not(.active) {
+      border-bottom: solid 2px $background;
+    }
+  }
+  margin: 0 0.25rem;
 }
 
 #wrapper-footer {
@@ -19,7 +52,7 @@
   fill: $primary !important;
 }
 
-
 .page-id-32 {
   background-color: $background;
 }
+

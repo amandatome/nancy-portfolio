@@ -11,9 +11,9 @@
                         <h1 class='text-right display-2'><?php the_title();?></h1>
                         <?php the_field('contact_content');?>
                     </div>  
-                </div>
+                </div><!-- .row -->
                 <div class='row no-gutters pt-4'>
-                    <h2 class='display-3 mb-2'>Contact</h2>
+                    <h2 class='display-3 mb-2'><?php the_field('contact_heading');?></h2>
                 <div class='col-md-12 contact-form pt-5'>
                     <?php 
                      the_content();

@@ -35,7 +35,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 function google_fonts()
 {
 	$query_args = array(
-		'family' => 'Quicksand:400|Raleway',
+		'family' => 'Quicksand:400|Raleway|Trade+Winds',
 		'subset' => 'latin,latin-ext'
 	);
 	wp_enqueue_style('google_fonts', add_query_arg($query_args, "//fonts.googleapis.com/css"), array(), null);
@@ -60,7 +60,8 @@ function image_setup()
 add_action('after_setup_theme', 'image_setup');
 
 if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page();
-	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Header & Footer',
+		'menu_title' 	=> 'Header & Footer'
+	));
 }

@@ -19,4 +19,30 @@ $tertiary:#f4dada;
 $secondary-opacity: #ED6A5A70;
 $warning-opacity: #ffc25c70;
 
+$animate: all 0.2s ease-in-out;
 
+//Underline
+@mixin underline ($color, $percentage) {
+    font-size: 80px;
+    font-weight: 800;
+    background-image: linear-gradient($warning-opacity);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0% $percentage;
+}
+
+@mixin square ($color, $width, $height, $top, $left, $index) {
+    position: absolute;
+    background-color: $color;
+    width: $width;
+    height: $height;
+    top: $top;
+    left: $left;
+    z-index: $index;
+    &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    }
+  
+}

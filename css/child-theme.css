@@ -1689,84 +1689,16 @@ pre {
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(121, 186, 193, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(121, 186, 193, 0.25); }
-  .form-control::-webkit-input-placeholder, .wpcf7 input[type=text]::-webkit-input-placeholder,
-  .wpcf7 input[type=search]::-webkit-input-placeholder,
-  .wpcf7 input[type=url]::-webkit-input-placeholder,
-  .wpcf7 input[type=tel]::-webkit-input-placeholder,
-  .wpcf7 input[type=number]::-webkit-input-placeholder,
-  .wpcf7 input[type=range]::-webkit-input-placeholder,
-  .wpcf7 input[type=date]::-webkit-input-placeholder,
-  .wpcf7 input[type=month]::-webkit-input-placeholder,
-  .wpcf7 input[type=week]::-webkit-input-placeholder,
-  .wpcf7 input[type=time]::-webkit-input-placeholder,
-  .wpcf7 input[type=datetime]::-webkit-input-placeholder,
-  .wpcf7 input[type=datetime-local]::-webkit-input-placeholder,
-  .wpcf7 input[type=color]::-webkit-input-placeholder,
-  .wpcf7 input[type=email]::-webkit-input-placeholder,
-  .wpcf7 input[type=file]::-webkit-input-placeholder,
-  .wpcf7 input[type=submit]::-webkit-input-placeholder,
-  .wpcf7 select::-webkit-input-placeholder,
-  .wpcf7 textarea::-webkit-input-placeholder, .wpcf7 .wpcf7-validation-errors::-webkit-input-placeholder {
+  .form-control::-webkit-input-placeholder, .wpcf7 input[type=text]::-webkit-input-placeholder, .wpcf7 input[type=search]::-webkit-input-placeholder, .wpcf7 input[type=url]::-webkit-input-placeholder, .wpcf7 input[type=tel]::-webkit-input-placeholder, .wpcf7 input[type=number]::-webkit-input-placeholder, .wpcf7 input[type=range]::-webkit-input-placeholder, .wpcf7 input[type=date]::-webkit-input-placeholder, .wpcf7 input[type=month]::-webkit-input-placeholder, .wpcf7 input[type=week]::-webkit-input-placeholder, .wpcf7 input[type=time]::-webkit-input-placeholder, .wpcf7 input[type=datetime]::-webkit-input-placeholder, .wpcf7 input[type=datetime-local]::-webkit-input-placeholder, .wpcf7 input[type=color]::-webkit-input-placeholder, .wpcf7 input[type=email]::-webkit-input-placeholder, .wpcf7 input[type=file]::-webkit-input-placeholder, .wpcf7 input[type=submit]::-webkit-input-placeholder, .wpcf7 select::-webkit-input-placeholder, .wpcf7 textarea::-webkit-input-placeholder, .wpcf7 .wpcf7-validation-errors::-webkit-input-placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control::-moz-placeholder, .wpcf7 input[type=text]::-moz-placeholder,
-  .wpcf7 input[type=search]::-moz-placeholder,
-  .wpcf7 input[type=url]::-moz-placeholder,
-  .wpcf7 input[type=tel]::-moz-placeholder,
-  .wpcf7 input[type=number]::-moz-placeholder,
-  .wpcf7 input[type=range]::-moz-placeholder,
-  .wpcf7 input[type=date]::-moz-placeholder,
-  .wpcf7 input[type=month]::-moz-placeholder,
-  .wpcf7 input[type=week]::-moz-placeholder,
-  .wpcf7 input[type=time]::-moz-placeholder,
-  .wpcf7 input[type=datetime]::-moz-placeholder,
-  .wpcf7 input[type=datetime-local]::-moz-placeholder,
-  .wpcf7 input[type=color]::-moz-placeholder,
-  .wpcf7 input[type=email]::-moz-placeholder,
-  .wpcf7 input[type=file]::-moz-placeholder,
-  .wpcf7 input[type=submit]::-moz-placeholder,
-  .wpcf7 select::-moz-placeholder,
-  .wpcf7 textarea::-moz-placeholder, .wpcf7 .wpcf7-validation-errors::-moz-placeholder {
+  .form-control::-moz-placeholder, .wpcf7 input[type=text]::-moz-placeholder, .wpcf7 input[type=search]::-moz-placeholder, .wpcf7 input[type=url]::-moz-placeholder, .wpcf7 input[type=tel]::-moz-placeholder, .wpcf7 input[type=number]::-moz-placeholder, .wpcf7 input[type=range]::-moz-placeholder, .wpcf7 input[type=date]::-moz-placeholder, .wpcf7 input[type=month]::-moz-placeholder, .wpcf7 input[type=week]::-moz-placeholder, .wpcf7 input[type=time]::-moz-placeholder, .wpcf7 input[type=datetime]::-moz-placeholder, .wpcf7 input[type=datetime-local]::-moz-placeholder, .wpcf7 input[type=color]::-moz-placeholder, .wpcf7 input[type=email]::-moz-placeholder, .wpcf7 input[type=file]::-moz-placeholder, .wpcf7 input[type=submit]::-moz-placeholder, .wpcf7 select::-moz-placeholder, .wpcf7 textarea::-moz-placeholder, .wpcf7 .wpcf7-validation-errors::-moz-placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control:-ms-input-placeholder, .wpcf7 input[type=text]:-ms-input-placeholder,
-  .wpcf7 input[type=search]:-ms-input-placeholder,
-  .wpcf7 input[type=url]:-ms-input-placeholder,
-  .wpcf7 input[type=tel]:-ms-input-placeholder,
-  .wpcf7 input[type=number]:-ms-input-placeholder,
-  .wpcf7 input[type=range]:-ms-input-placeholder,
-  .wpcf7 input[type=date]:-ms-input-placeholder,
-  .wpcf7 input[type=month]:-ms-input-placeholder,
-  .wpcf7 input[type=week]:-ms-input-placeholder,
-  .wpcf7 input[type=time]:-ms-input-placeholder,
-  .wpcf7 input[type=datetime]:-ms-input-placeholder,
-  .wpcf7 input[type=datetime-local]:-ms-input-placeholder,
-  .wpcf7 input[type=color]:-ms-input-placeholder,
-  .wpcf7 input[type=email]:-ms-input-placeholder,
-  .wpcf7 input[type=file]:-ms-input-placeholder,
-  .wpcf7 input[type=submit]:-ms-input-placeholder,
-  .wpcf7 select:-ms-input-placeholder,
-  .wpcf7 textarea:-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors:-ms-input-placeholder {
+  .form-control:-ms-input-placeholder, .wpcf7 input[type=text]:-ms-input-placeholder, .wpcf7 input[type=search]:-ms-input-placeholder, .wpcf7 input[type=url]:-ms-input-placeholder, .wpcf7 input[type=tel]:-ms-input-placeholder, .wpcf7 input[type=number]:-ms-input-placeholder, .wpcf7 input[type=range]:-ms-input-placeholder, .wpcf7 input[type=date]:-ms-input-placeholder, .wpcf7 input[type=month]:-ms-input-placeholder, .wpcf7 input[type=week]:-ms-input-placeholder, .wpcf7 input[type=time]:-ms-input-placeholder, .wpcf7 input[type=datetime]:-ms-input-placeholder, .wpcf7 input[type=datetime-local]:-ms-input-placeholder, .wpcf7 input[type=color]:-ms-input-placeholder, .wpcf7 input[type=email]:-ms-input-placeholder, .wpcf7 input[type=file]:-ms-input-placeholder, .wpcf7 input[type=submit]:-ms-input-placeholder, .wpcf7 select:-ms-input-placeholder, .wpcf7 textarea:-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors:-ms-input-placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control::-ms-input-placeholder, .wpcf7 input[type=text]::-ms-input-placeholder,
-  .wpcf7 input[type=search]::-ms-input-placeholder,
-  .wpcf7 input[type=url]::-ms-input-placeholder,
-  .wpcf7 input[type=tel]::-ms-input-placeholder,
-  .wpcf7 input[type=number]::-ms-input-placeholder,
-  .wpcf7 input[type=range]::-ms-input-placeholder,
-  .wpcf7 input[type=date]::-ms-input-placeholder,
-  .wpcf7 input[type=month]::-ms-input-placeholder,
-  .wpcf7 input[type=week]::-ms-input-placeholder,
-  .wpcf7 input[type=time]::-ms-input-placeholder,
-  .wpcf7 input[type=datetime]::-ms-input-placeholder,
-  .wpcf7 input[type=datetime-local]::-ms-input-placeholder,
-  .wpcf7 input[type=color]::-ms-input-placeholder,
-  .wpcf7 input[type=email]::-ms-input-placeholder,
-  .wpcf7 input[type=file]::-ms-input-placeholder,
-  .wpcf7 input[type=submit]::-ms-input-placeholder,
-  .wpcf7 select::-ms-input-placeholder,
-  .wpcf7 textarea::-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors::-ms-input-placeholder {
+  .form-control::-ms-input-placeholder, .wpcf7 input[type=text]::-ms-input-placeholder, .wpcf7 input[type=search]::-ms-input-placeholder, .wpcf7 input[type=url]::-ms-input-placeholder, .wpcf7 input[type=tel]::-ms-input-placeholder, .wpcf7 input[type=number]::-ms-input-placeholder, .wpcf7 input[type=range]::-ms-input-placeholder, .wpcf7 input[type=date]::-ms-input-placeholder, .wpcf7 input[type=month]::-ms-input-placeholder, .wpcf7 input[type=week]::-ms-input-placeholder, .wpcf7 input[type=time]::-ms-input-placeholder, .wpcf7 input[type=datetime]::-ms-input-placeholder, .wpcf7 input[type=datetime-local]::-ms-input-placeholder, .wpcf7 input[type=color]::-ms-input-placeholder, .wpcf7 input[type=email]::-ms-input-placeholder, .wpcf7 input[type=file]::-ms-input-placeholder, .wpcf7 input[type=submit]::-ms-input-placeholder, .wpcf7 select::-ms-input-placeholder, .wpcf7 textarea::-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors::-ms-input-placeholder {
     color: #6c757d;
     opacity: 1; }
   .form-control::placeholder, .wpcf7 input[type=text]::placeholder,
@@ -4352,15 +4284,13 @@ input[type="button"].btn-block {
     background-color: #79bac1;
     border: 0;
     border-radius: 1rem;
-    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     -moz-appearance: none;
          appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-moz-range-thumb {
-        -webkit-transition: none;
+        -moz-transition: none;
         transition: none; } }
     .custom-range::-moz-range-thumb:active {
       background-color: #f3f9f9; }
@@ -4381,14 +4311,12 @@ input[type="button"].btn-block {
     background-color: #79bac1;
     border: 0;
     border-radius: 1rem;
-    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     appearance: none; }
     @media (prefers-reduced-motion: reduce) {
       .custom-range::-ms-thumb {
-        -webkit-transition: none;
+        -ms-transition: none;
         transition: none; } }
     .custom-range::-ms-thumb:active {
       background-color: #f3f9f9; }
@@ -11612,12 +11540,36 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
-.navbar {
-  color: #000 !important; }
+.navbar-light .navbar-nav .nav-link {
+  color: #FDF8ED !important;
+  font-size: 20px; }
 
-.navbrand {
+.navbar-brand {
   font-family: "Quicksand";
-  font-size: 80px; }
+  color: #FDF8ED !important;
+  line-height: 2rem; }
+
+a[title='Nancy Johnston'] {
+  font-weight: 800;
+  font-size: 40px;
+  font-family: 'Trade Winds'; }
+
+.tagline {
+  font-size: 30px; }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 248, 237, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.custom-toggler.navbar-toggler {
+  border-color: #FDF8ED; }
+
+.active {
+  border-bottom: solid 2px #FDF8ED; }
+
+li {
+  margin: 0 0.25rem; }
+  li:hover:not(.active) {
+    border-bottom: solid 2px #FDF8ED; }
 
 #wrapper-footer {
   background-color: #79bac1; }
@@ -11699,24 +11651,25 @@ form {
 
 .square {
   position: absolute;
-  background-color: #ed6a5a;
+  background-color: #ED6A5A70;
   width: 25%;
   height: 78%;
   top: 5%;
-  right: 13%;
-  opacity: .6; }
+  left: 60%;
+  z-index: 0; }
   .square::after {
     content: "";
     display: block;
     padding-bottom: 100%; }
 
 .services h2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c), to(#ffc25c));
-  background-image: linear-gradient(#ffc25c 0%, #ffc25c 100%);
+  font-size: 80px;
+  font-weight: 800;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
+  background-image: linear-gradient(#ffc25c70);
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0% 88%;
-  margin: 0 25rem; }
+  background-size: 100% 0.3em;
+  background-position: 0% 88%; }
 
 .services-summary {
   background-color: #e1f2fb; }
@@ -11727,12 +11680,12 @@ form {
 
 .square-contact {
   position: absolute;
-  background-color: #ffc25c;
+  background-color: #ffc25c70;
   width: 30%;
   height: 58%;
-  bottom: 20%;
+  top: 22%;
   left: 10%;
-  opacity: .8; }
+  z-index: 0; }
   .square-contact::after {
     content: "";
     display: block;
@@ -11768,10 +11721,7 @@ form {
   .blog h2 {
     font-size: 0 !important; }
     .blog h2 a {
-      font-size: 2rem;
-      text-decoration: none; }
-      .blog h2 a:hover {
-        color: #fff; }
+      font-size: 2rem; }
   .blog h3 {
     font-size: 1.25rem; }
 
@@ -11789,11 +11739,14 @@ form {
     padding-bottom: 100%; }
 
 .page-title {
+  font-size: 80px;
+  font-weight: 800;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
   background-image: linear-gradient(#ffc25c70);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0% 75%;
+  font-size: 160px;
   margin-bottom: 2rem; }
 
 .card-footer {
@@ -11801,16 +11754,24 @@ form {
   border-top: none !important;
   padding: 0 !important; }
 
-.entry-title {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ED6A5A70));
-  background-image: linear-gradient(#ED6A5A70);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  -webkit-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in; }
-  .entry-title:hover {
-    background-size: 100% 88%; }
+.single-post {
+  background-color: #FDF8ED; }
+  .single-post h1 {
+    font-size: 80px;
+    font-weight: 800;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
+    background-image: linear-gradient(#ffc25c70);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0% 88%; }
+  .single-post h2 {
+    font-size: 1.5rem; }
+  .single-post .post-image {
+    z-index: 3;
+    margin-left: 5rem; }
+  .single-post .entry-content {
+    background-color: #f4dada;
+    padding: 4rem; }
 
 .contact-text {
   background-color: #e1f2fb; }
@@ -11823,17 +11784,18 @@ form {
             flex: 1 100%; }
 
 #contact h2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c), to(#ffc25c));
-  background-image: linear-gradient(#ffc25c 0%, #ffc25c 100%);
+  font-size: 80px;
+  font-weight: 800;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
+  background-image: linear-gradient(#ffc25c70);
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0% 88%;
-  margin: 0 25rem; }
+  background-size: 100% 0.3em;
+  background-position: 0% 88%; }
 
 .contact-form {
   background-color: #f4dada; }
   .contact-form input[type='submit'] {
-    background-color: transparent;
+    background-color: #ffc25c;
     color: #000;
     border: #ffc25c solid 2px;
     font-size: 20px;
@@ -11843,48 +11805,5 @@ form {
       background-color: #ffc25c;
       color: #000;
       border: #ffc25c solid 2px; }
-
-.page-link {
-  position: relative;
-  display: block;
-  padding: 0.5rem 0.75rem;
-  margin-left: -1px;
-  line-height: 1.25;
-  color: #ED6A5A;
-  background-color: #fff;
-  border: 1px solid #dee2e6; }
-  .page-link:hover {
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-    background-color: #ED6A5A;
-    border-color: #ED6A5A; }
-  .page-link:focus {
-    z-index: 2;
-    outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(121, 186, 193, 0.25);
-            box-shadow: 0 0 0 0.2rem rgba(121, 186, 193, 0.25); }
-
-.page-item:first-child .page-link {
-  margin-left: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem; }
-
-.page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem; }
-
-.page-item.active .page-link {
-  z-index: 1;
-  color: #fff;
-  background-color: #ED6A5A;
-  border-color: #ED6A5A; }
-
-.page-item.disabled .page-link {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: auto;
-  background-color: #fff;
-  border-color: #dee2e6; }
 
 /*# sourceMappingURL=child-theme.css.map */

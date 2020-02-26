@@ -7,10 +7,6 @@
     font-size: 0!important;
     a {
       font-size: 2rem;
-      text-decoration: none;
-      &:hover {
-        color: $white;
-      }
     }
   }
   h3 {
@@ -19,25 +15,12 @@
 }
 
 .square-blog {
-  position: absolute;
-  background-color: $warning-opacity;
-  width: 25%;
-  height: 100%;
-  top: 2%;
-  left: 0;
-  z-index: -1;
-  &::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
+  @include square ($warning-opacity, 25%, 100%, 2%, 0, -1)
 }
 
 .page-title {
-  background-image: linear-gradient($warning-opacity);
-  background-repeat: no-repeat;
-  background-size: 100% 0.3em;
-  background-position: 0% 75%;
+  @include underline ($warning-opacity, 75%);
+  font-size: 160px;
   margin-bottom: 2rem;
 }
 
@@ -47,13 +30,21 @@
   padding: 0 !important;
 }
 
-.entry-title {
-  background-image: linear-gradient($secondary-opacity);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-  &:hover {
-    background-size: 100% 88%;
+//Single Blog Page
+.single-post {
+  background-color: $background;
+  h1 {
+    @include underline ($warning-opacity, 88%)
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .post-image{
+    z-index: 3;
+    margin-left: 5rem;
+  }
+  .entry-content {
+    background-color: $tertiary;
+    padding: 4rem;
   }
 }

@@ -10,18 +10,14 @@
 
 #contact{
     h2 {
-        background-image: linear-gradient($warning 0%, $warning 100%);
-        background-repeat: no-repeat;
-        background-size: 100% 0.2em;
-        background-position: 0% 88%;
-        margin: 0 25rem;
+        @include underline ($warning, 88%)
     }
 }
 
 .contact-form {
     background-color: $tertiary;  
     input[type='submit'] {
-        background-color: transparent;
+        background-color: $warning;
         color: $black;
         border: $warning solid 2px;
         font-size: 20px;

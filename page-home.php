@@ -18,8 +18,12 @@
             </div><!-- end container -->
         </section>
         <section class='services'>
+
             <div class='container py-5'>
-                <h2 class='display-3 d-flex justify-content-center'><?php the_field('services_title');?></h2>
+                <div class='row'>
+                    <h2 class='display-3'><?php the_field('services_title');?></h2>
+                </div>    
+
                 <div class='row justify-content-between py-3'>
                 <?php
                         // check if the repeater field has rows of data
