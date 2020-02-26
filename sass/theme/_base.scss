@@ -1,0 +1,30 @@
+h1, h2, h3, h4 {
+    font-family: 'Quicksand';
+}
+
+h1 {
+  font-size: 160px;
+}
+
+h2 {
+  font-size: 120px;
+}
+
+p,
+li,
+a,
+ul,
+ol,
+table,
+form {
+  font-size: 18px;
+  font-family: 'Raleway'; 
+}
+
+
+.btn {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
