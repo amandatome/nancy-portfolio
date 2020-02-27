@@ -19,8 +19,6 @@ $tertiary:#f4dada;
 $secondary-opacity: #ED6A5A70;
 $warning-opacity: #ffc25c70;
 
-$animate: all 0.2s ease-in-out;
-
 //Underline
 @mixin underline ($color, $percentage) {
     font-size: 80px;
@@ -31,6 +29,7 @@ $animate: all 0.2s ease-in-out;
     background-position: 0% $percentage;
 }
 
+//Square
 @mixin square ($color, $width, $height, $top, $left, $index) {
     position: absolute;
     background-color: $color;
@@ -40,9 +39,8 @@ $animate: all 0.2s ease-in-out;
     left: $left;
     z-index: $index;
     &::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-    }
-  
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+  }
 }

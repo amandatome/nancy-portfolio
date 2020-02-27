@@ -1,13 +1,20 @@
+.wrapper {
+  padding: 0!important;
+}
+.container-fluid {
+  padding: 0!important;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Quicksand';
 }
 
 h1 {
-  font-size: 160px;
+  font-size: 10vw;
 }
 
 h2 {
-  font-size: 120px;
+  font-size: 8vw;
 }
 
 p,
@@ -27,3 +34,4 @@ form {
     transform: scale(1.1);
   }
 }
+

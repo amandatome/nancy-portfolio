@@ -11547,12 +11547,12 @@ figure.woocommerce-product-gallery__wrapper {
 .navbar-brand {
   font-family: "Quicksand";
   color: #FDF8ED !important;
-  line-height: 2rem; }
+  line-height: 2.5rem; }
 
 a[title='Nancy Johnston'] {
   font-weight: 800;
   font-size: 40px;
-  font-family: 'Trade Winds'; }
+  font-family: 'Rock Salt'; }
 
 .tagline {
   font-size: 30px; }
@@ -11611,10 +11611,10 @@ h1, h2, h3, h4 {
   font-family: 'Quicksand'; }
 
 h1 {
-  font-size: 160px; }
+  font-size: 10vw; }
 
 h2 {
-  font-size: 120px; }
+  font-size: 8vw; }
 
 p,
 li,
@@ -11623,7 +11623,7 @@ ul,
 ol,
 table,
 form {
-  font-size: 18px;
+  font-size: 1.5vw;
   font-family: 'Raleway'; }
 
 .btn,
@@ -11633,6 +11633,12 @@ form {
   .btn:hover, .wpcf7 input:hover[type=submit] {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+
+.wrapper {
+  padding: 0 !important; }
+
+.container-fluid {
+  padding: 0 !important; }
 
 #maincontent {
   margin-top: 5rem; }
@@ -11655,7 +11661,7 @@ form {
   width: 25%;
   height: 78%;
   top: 5%;
-  left: 60%;
+  left: 62%;
   z-index: 0; }
   .square::after {
     content: "";
@@ -11681,10 +11687,10 @@ form {
 .square-contact {
   position: absolute;
   background-color: #ffc25c70;
-  width: 30%;
+  width: 35%;
   height: 58%;
-  top: 22%;
-  left: 10%;
+  top: 20%;
+  left: 5%;
   z-index: 0; }
   .square-contact::after {
     content: "";
@@ -11707,8 +11713,8 @@ form {
 .mission {
   background-color: #ffc25c70; }
   .mission h2 {
-    font-size: 120px;
-    margin-top: -6.5rem;
+    font-size: 9vw;
+    margin-top: -8.5rem;
     pointer-events: none;
     -webkit-box-flex: 1;
         -ms-flex: 1 100%;

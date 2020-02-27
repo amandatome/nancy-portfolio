@@ -1,105 +1,129 @@
-<?php /* Template Name: Home */?>
-<?php get_header();?>
-<?php // Start the loop ?>
-    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php
+
+/* Template Name: Home */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+get_header();
+
+$container = get_theme_mod( 'understrap_container_type' );
+
+?>
+
+<div class="wrapper" id="page-wrapper">
+
+	<div class="container-fluid" id="content" tabindex="-1">
+
+        <main class="site-main" id="main">
+
+        <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        
         <!-- Overview Section -->
-	    <section class='overview pt-5 pb-5'>
-            <div class="container ">
-	            <div class='row'>
-	                <div class='square'></div>
-	                <div class='col-md-7 text-right summary'>
-	                    <h2 class='display-3'><?php the_field('summary_title');?></h2>
-	                    <?php the_field('summary');?>
-	                </div>
-	                <div class='col-md-5'>
-                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large-rectangle', false, array('class' => 'featured-image')); ?> 
-	             </div>
-	            </div><!-- end row -->
-            </div><!-- end container -->
+        <section class='overview pt-5 pb-5'>
+            <div class='row'>
+                <div class='square'></div>
+                <!--Summary Text -->
+                <div class='col-md-7 p-5 text-right summary'>
+                    <?php if (get_field('summary_title')) : ?>
+                        <h2 class='display-3'><?php the_field('summary_title');?></h2>
+                    <?php endif; ?>
+                    <?php if (get_field('summary')) : ?>
+                        <?php the_field('summary');?>
+                    <?php endif; ?>    
+                </div> <!-- .col -->
+                <!--Summary Image -->
+                <div class='col-md-5'>
+                        <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large-rectangle', false, array('class' => 'featured-image')); ?> 
+                </div><!-- .col -->
+            </div><!-- .row -->
         </section>
-        <section class='services'>
 
-            <div class='container py-5'>
-                <div class='row'>
-                    <h2 class='display-3'><?php the_field('services_title');?></h2>
-                </div>    
+        <!-- Services -->                
+        <section class='services p-5 mx-5'>
+            <div class='row'>
+                <h2 class='display-3'><?php the_field('services_title');?></h2>
+            </div> <!-- .row -->   
 
-                <div class='row justify-content-between py-3'>
+            <div class='row justify-content-between py-3'>
                 <?php
-                        // check if the repeater field has rows of data
-                        if( have_rows('services_info') ):
+                    // check if the repeater field has rows of data
+                    if( have_rows('services_info') ):
 
-                            // loop through the rows of data
-                            while ( have_rows('services_info') ) : the_row(); ?>
-                            <div class='col-md-4 border p-5 services-summary '>
-                                <?php the_sub_field('services_content');?>
-                            </div>  
-                           <?php endwhile;
+                    // loop through the rows of data
+                    while ( have_rows('services_info') ) : the_row(); ?>
 
-                        else :
+                        <div class='col-md-4 border p-5 services-summary'>
+                            <?php the_sub_field('services_content');?>
+                        </div><!-- .col -->
 
-                            // no rows found
+                    <?php endwhile;
 
-                        endif;
+                    else :
 
-                        ?>
-                      
-                </div><!-- end row -->
-            </div><!-- end container -->  
-        </section>    
-        <!-- Contact Section -->
+                    // no rows found
+
+                    endif;
+                ?>
+            </div><!-- .row -->
+        </section>   
+         <!-- Contact Section -->
         <section class='contact-section p-5'>
-            <div class='container'>
-                <div class='row'>
-                <div class='square-contact'></div>
-                    <div class='col-md-5'>
-                        <?php $image = get_field('contact_image');
-                            if ($image):
-                                // Image variables.
-                                $url = $image['url'];
-                                $alt = $image['alt'];
-                                $caption = $image['caption'];
+            <div class='row p-5'>
+            <div class='square-contact'></div>
+                <div class='col-md-5'>
+                    <?php $image = get_field('contact_image');
+                        if ($image):
+                            // Image variables.
+                            $url = $image['url'];
+                            $alt = $image['alt'];
+                            $caption = $image['caption'];
 
-                                // Thumbnail size attributes.
-                                $size = 'medium-square';
-                                $thumb = $image['sizes'][$size];
-                                $width = $image['sizes'][$size . '-width'];
-                                $height = $image['sizes'][$size . '-height'];
+                            // Thumbnail size attributes.
+                            $size = 'medium-square';
+                            $thumb = $image['sizes'][$size];
+                            $width = $image['sizes'][$size . '-width'];
+                            $height = $image['sizes'][$size . '-height'];
 
-                                // Begin caption wrap.
-                                if ($caption): ?>
-                                        <div class="wp-caption">
-                                    <?php endif;?>
+                            // Begin caption wrap.
+                            if ($caption): ?>
+                                    <div class="wp-caption">
+                                <?php endif;?>
 
-                        <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
-                            <img class='img-fluid' src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
-                        </a>
+                    <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
+                        <img class='img-fluid' src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+                    </a>
 
-                        <?php
-                        // End caption wrap.
-                        if ($caption): ?>
-                                <p class="wp-caption-text text-center"><?php echo esc_html($caption); ?></p>
-                                </div>
-                            <?php endif;?>
+                    <?php
+                    // End caption wrap.
+                    if ($caption): ?>
+                            <p class="wp-caption-text text-center"><?php echo esc_html($caption); ?></p>
+                            </div>
                         <?php endif;?>
-                    </div> <!--end col--> 
-                    <div class='col-md-7'>
-                        <h2 class='display-3'><?php the_field('contact_title');?></h2>
-                        <?php the_field('contact_content');?>
-                        <?php 
-                            $link = get_field('contact_button');
-                            if( $link ): 
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="btn btn-warning btn-lg" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                            <?php endif; ?>
-                    </div>  <!--end col--> 
-                </div><!--end row--> 
-            </div><!--end container-->    
+                    <?php endif;?>
+                </div><!-- .col --> 
+                <div class='col-md-7'>
+                    <h2 class='display-3'><?php the_field('contact_title');?></h2>
+                    <?php the_field('contact_content');?>
+                    <?php 
+                        $link = get_field('contact_button');
+                        if( $link ): 
+                            $link_url = $link['url'];
+                            $link_title = $link['title'];
+                            $link_target = $link['target'] ? $link['target'] : '_self';
+                            ?>
+                            <a class="btn btn-warning btn-lg" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                        <?php endif; ?>
+                </div><!-- .col --> 
+            </div><!-- .row --> 
         </section>
+                
+        <?php endwhile; // end of the loop. ?>
 
-    <?php endwhile; // end the loop?>
+        </main><!-- #main -->
 
-<?php get_footer();?>
+	</div><!-- #content -->
+
+</div><!-- #page-wrapper -->
+
+<?php get_footer(); ?>

@@ -24,13 +24,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 <div class="wrapper" id="index-wrapper">
-
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-	<h1 class='page-title text-right'><?php single_post_title(); ?></h1>
+		<h1 class='page-title text-right'><?php single_post_title(); ?></h1>
 
 		<main class="site-main" id="main">
 				<!-- Do the left sidebar check and opens the primary div -->
 				<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			
 			<div class="row">
 
 				<?php if ( have_posts() ) : ?>
@@ -58,11 +58,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endif; ?>
 
 			</div><!-- .row -->	
+
 		</main><!-- #main -->	
 			<div class='row mt-4 d-flex justify-content-center'>		
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-				</div>		
+				<?php understrap_pagination(); ?>
+			</div>		
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 

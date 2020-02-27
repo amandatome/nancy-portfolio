@@ -19,7 +19,7 @@
 }
 
 .square {
-    @include square ($secondary-opacity, 25%, 78%, 5%, 60%, 0)
+    @include square ($secondary-opacity, 25%, 78%, 5%, 62%, 0)
 }
 
 //Services Section
@@ -39,5 +39,5 @@
 }
 
 .square-contact {
-    @include square ($warning-opacity, 30%, 58%, 22%, 10%, 0)
+    @include square ($warning-opacity, 35%, 58%, 20%, 5%, 0)
 }

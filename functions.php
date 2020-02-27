@@ -35,7 +35,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 function google_fonts()
 {
 	$query_args = array(
-		'family' => 'Quicksand:400|Raleway|Trade+Winds',
+		'family' => 'Quicksand:400|Raleway|Rock+Salt',
 		'subset' => 'latin,latin-ext'
 	);
 	wp_enqueue_style('google_fonts', add_query_arg($query_args, "//fonts.googleapis.com/css"), array(), null);
