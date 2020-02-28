@@ -11572,7 +11572,8 @@ li {
     border-bottom: solid 2px #FDF8ED; }
 
 #wrapper-footer {
-  background-color: #79bac1; }
+  background-color: #79bac1;
+  margin-top: -0.75wpx; }
 
 .site-info {
   font-size: 20px !important; }
@@ -11582,6 +11583,38 @@ li {
 
 .page-id-32 {
   background-color: #FDF8ED; }
+
+.single-workshops {
+  background-color: #FDF8ED; }
+  .single-workshops h1 {
+    font-size: 80px;
+    font-weight: 800;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ED6A5A70));
+    background-image: linear-gradient(#ED6A5A70);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0% 88%; }
+  .single-workshops h2 {
+    font-size: 1.5rem; }
+  .single-workshops .entry-content {
+    background: #e1f2fb;
+    padding: 4rem; }
+  .single-workshops .post-image {
+    z-index: 3;
+    margin-left: 5rem; }
+
+.page-id-119 {
+  background-color: #FDF8ED; }
+
+.workshop-title {
+  font-size: 80px;
+  font-weight: 800;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ED6A5A70));
+  background-image: linear-gradient(#ED6A5A70);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0% 75%;
+  font-size: 160px; }
 
 /*
 * Use existing Bootstrap 4 classes and
@@ -11607,6 +11640,12 @@ li {
     color: #dc3545;
     border: 1px solid #e9ecef; }
 
+.wrapper {
+  padding: 0 !important; }
+
+.container-fluid {
+  padding: 0 !important; }
+
 h1, h2, h3, h4 {
   font-family: 'Quicksand'; }
 
@@ -11623,7 +11662,7 @@ ul,
 ol,
 table,
 form {
-  font-size: 1.5vw;
+  font-size: 18px;
   font-family: 'Raleway'; }
 
 .btn,
@@ -11633,12 +11672,6 @@ form {
   .btn:hover, .wpcf7 input:hover[type=submit] {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
-
-.wrapper {
-  padding: 0 !important; }
-
-.container-fluid {
-  padding: 0 !important; }
 
 #maincontent {
   margin-top: 5rem; }
@@ -11671,8 +11704,8 @@ form {
 .services h2 {
   font-size: 80px;
   font-weight: 800;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
-  background-image: linear-gradient(#ffc25c70);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c));
+  background-image: linear-gradient(#ffc25c);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0% 88%; }
@@ -11689,13 +11722,81 @@ form {
   background-color: #ffc25c70;
   width: 35%;
   height: 58%;
-  top: 20%;
+  top: 25%;
   left: 5%;
   z-index: 0; }
   .square-contact::after {
     content: "";
     display: block;
     padding-bottom: 100%; }
+
+@media screen and (max-width: 1200px) {
+  .row {
+    margin: 0 !important; }
+  .square {
+    position: absolute;
+    background-color: #ED6A5A70;
+    width: 25%;
+    height: 78%;
+    top: 8%;
+    left: 73%;
+    z-index: 0; }
+    .square::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+  .square-contact {
+    position: absolute;
+    background-color: #ffc25c70;
+    width: 40%;
+    height: 35%;
+    top: 18%;
+    left: 20%;
+    z-index: 0; }
+    .square-contact::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+  .wp-caption-text {
+    text-align: left !important; } }
+
+@media screen and (max-width: 992px) {
+  .row {
+    margin: 0 !important; }
+  .square {
+    display: none; }
+  .wp-caption-text {
+    text-align: center !important; }
+  .square-contact {
+    position: absolute;
+    background-color: #ffc25c70;
+    width: 48%;
+    height: 35%;
+    top: 18%;
+    left: 20%;
+    z-index: 0; }
+    .square-contact::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .square-contact {
+    position: absolute;
+    background-color: #ffc25c70;
+    width: 15%;
+    height: 35%;
+    top: 13%;
+    left: 10%;
+    z-index: 0; }
+    .square-contact::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .square-contact {
+    display: none; } }
 
 .page-id-34 {
   background-color: #FDF8ED; }
@@ -11779,6 +11880,9 @@ form {
     background-color: #f4dada;
     padding: 4rem; }
 
+.contact-image {
+  background-color: #e1f2fb; }
+
 .contact-text {
   background-color: #e1f2fb; }
   .contact-text h1 {
@@ -11792,8 +11896,8 @@ form {
 #contact h2 {
   font-size: 80px;
   font-weight: 800;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
-  background-image: linear-gradient(#ffc25c70);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c));
+  background-image: linear-gradient(#ffc25c);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0% 88%; }

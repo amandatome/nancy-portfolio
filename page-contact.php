@@ -24,6 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class='row pt-5 no-gutters'>
                     <div class='col-md-4 contact-image'>
                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large-rectangle'); ?>
+                        <!-- <?php echo get_the_post_thumbnail_caption();?> -->
                     </div><!-- .col -->  
                     <div class='col-md-8 contact-text p-4'>
                         <h1 class='text-right display-2'><?php the_title();?></h1>

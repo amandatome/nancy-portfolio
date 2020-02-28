@@ -19,11 +19,18 @@ $tertiary:#f4dada;
 $secondary-opacity: #ED6A5A70;
 $warning-opacity: #ffc25c70;
 
+//Breakpoints 
+$xs: 0;
+$sm: 576px;
+$md: 768px; 
+$lg: 992px; 
+$xl: 1200px;
+
 //Underline
-@mixin underline ($color, $percentage) {
+@mixin underline ( $color, $percentage) {
     font-size: 80px;
     font-weight: 800;
-    background-image: linear-gradient($warning-opacity);
+    background-image: linear-gradient($color);
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
     background-position: 0% $percentage;

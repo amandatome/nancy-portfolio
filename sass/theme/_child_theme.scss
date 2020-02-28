@@ -42,6 +42,7 @@ li {
 
 #wrapper-footer {
   background-color: $primary;
+  margin-top: -0.75wpx;
 }
 
 .site-info {
@@ -54,5 +55,32 @@ li {
 
 .page-id-32 {
   background-color: $background;
+}
+
+.single-workshops {
+  background-color: $background;
+  h1 {
+    @include underline ($secondary-opacity, 88%);
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .entry-content {
+    background: $background-two;
+    padding: 4rem;
+  }
+  .post-image{
+    z-index: 3;
+    margin-left: 5rem;
+  }
+}
+
+.page-id-119 {
+  background-color: $background;
+
+}
+.workshop-title {
+  @include underline($secondary-opacity, 75%);
+  font-size: 160px;
 }
 

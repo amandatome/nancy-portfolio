@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-light bg-primary">
+		<nav class="navbar navbar-expand-xl navbar-light bg-primary">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -40,8 +40,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
-
-							<!-- <h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1> -->
 						
 							<?php if ( get_bloginfo( 'description' ) ) {
 								echo '<p class="tagline text-right">' . esc_html( get_bloginfo( 'description' ) ) . '</p>';

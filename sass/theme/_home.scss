@@ -35,9 +35,56 @@
 //Contact Section
 .contact-section {
     background-color: $tertiary;
-    position:relative;
+    position: relative;
 }
 
 .square-contact {
-    @include square ($warning-opacity, 35%, 58%, 20%, 5%, 0)
+    @include square ($warning-opacity, 35%, 58%, 25%, 5%, 0)
+}
+
+//Media Queries
+//Extra Large
+@media screen and (max-width: $xl) {
+    .row {
+        margin: 0!important;
+    }
+    .square {
+        @include square ($secondary-opacity, 25%, 78%, 8%, 73%, 0)
+    }
+    .square-contact {
+        @include square ($warning-opacity, 40%, 35%, 18%, 20%, 0)
+    }
+    .wp-caption-text {
+        text-align: left!important;
+    }
+}
+
+//Large
+@media screen and (max-width: $lg) {
+    .row {
+        margin: 0!important;
+    }
+    .square {
+        display: none;    
+    }
+    .wp-caption-text {
+        text-align: center!important;
+    }
+    .square-contact {
+        @include square ($warning-opacity, 48%, 35%, 18%, 20%, 0)
+    }
+}
+
+//Medium
+@media screen and (max-width: $md) {
+    .square-contact {
+        @include square ($warning-opacity, 15%, 35%, 13%, 10%, 0)
+    }
+}
+
+//Small
+@media screen and (max-width: $sm) {
+    .square-contact {
+        display: none;
+    }
 }
