@@ -14,7 +14,7 @@
 
 #contact{
     h2 {
-        @include underline ($warning, 88%)
+        @include underline ($warning-opacity, 88%)
     }
 }
 
