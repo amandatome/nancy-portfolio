@@ -21,12 +21,14 @@ $container = get_theme_mod( 'understrap_container_type' );
         
         <!-- Overview Section -->
         <section class='overview pt-5 pb-5'>
+
             <div class='row'>
-                <div class='square'></div>
+                 <!-- <div class='square'></div> -->
+
                 <!--Summary Text -->
                 <div class='col-md-7 p-5 text-right summary'>
                     <?php if (get_field('summary_title')) : ?>
-                        <h2 class='display-3'><?php the_field('summary_title');?></h2>
+                        <h1 class='display-1'><?php the_field('summary_title');?></h1>
                     <?php endif; ?>
                     <?php if (get_field('summary')) : ?>
                         <?php the_field('summary');?>
@@ -53,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     // loop through the rows of data
                     while ( have_rows('services_info') ) : the_row(); ?>
 
-                        <div class='col-md-4 border p-5 services-summary'>
+                        <div class='col-lg-4 col-md-12 border p-5 services-summary'>
                             <?php the_sub_field('services_content');?>
                         </div><!-- .col -->
 
@@ -70,8 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
          <!-- Contact Section -->
         <section class='contact-section p-5'>
             <div class='row p-5'>
-            <div class='square-contact'></div>
-                <div class='col-md-5'>
+                <div class='col-xl-5 '>
                     <?php $image = get_field('contact_image');
                         if ($image):
                             // Image variables.
@@ -102,7 +103,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php endif;?>
                     <?php endif;?>
                 </div><!-- .col --> 
-                <div class='col-md-7'>
+                <div class='col-xl-7 col-lg-12'>
                     <h2 class='display-3'><?php the_field('contact_title');?></h2>
                     <?php the_field('contact_content');?>
                     <?php 

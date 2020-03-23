@@ -35,7 +35,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 function google_fonts()
 {
 	$query_args = array(
-		'family' => 'Playfair+Display:400|Montserrat:400|Quicksand:400',
+		'family' => 'Playfair+Display:400|Montserrat:400|Quicksand:400|Petit+Formal+Script:400',
 		'subset' => 'latin,latin-ext'
 	);
 	wp_enqueue_style('google_fonts', add_query_arg($query_args, "//fonts.googleapis.com/css"), array(), null);

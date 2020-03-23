@@ -53,10 +53,6 @@ li {
   fill: $primary !important;
 }
 
-.page-id-32 {
-  background-color: $background;
-}
-
 .single-workshops {
   background-color: $background;
   h1 {
@@ -75,12 +71,22 @@ li {
   }
 }
 
-.page-id-119 {
+.page-id-119, .page-id-140, .page-id-32 {
   background-color: $background;
 
 }
-.workshop-title {
+.workshop-title, .resource-title {
   @include underline($secondary-opacity, 75%);
-  font-size: 160px;
+  font-size: 120px;
+}
+
+.page-id-140 {
+  h2 {
+    font-size: 60pt;
+    @include underline($warning-opacity, 88%);
+  }
+  .col-lg-12 {
+    background-color: $white;
+  }
 }
 

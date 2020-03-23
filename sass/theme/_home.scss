@@ -5,22 +5,19 @@
 //Overview Section
 .overview {
     background-color: $background;
-    position:relative;
-    z-index: -1;
+    h1 {
+        @include underline ($secondary-opacity, 88%);
+        font-family: 'Petit Formal Script', cursive;
+    }
+    .featured-image{
+        box-shadow: 33px -26px 0px 0px $secondary-opacity;
+    }
 }
 
 .summary {
     margin: auto 0;
-    z-index: 1; 
 }
 
-.featured-image {
-    z-index: 1;
-}
-
-.square {
-    @include square ($secondary-opacity, 25%, 78%, 5%, 62%, 0)
-}
 
 //Services Section
 .services{
@@ -35,27 +32,37 @@
 //Contact Section
 .contact-section {
     background-color: $tertiary;
-    position: relative;
-}
-
-.square-contact {
-    @include square ($warning-opacity, 35%, 58%, 25%, 5%, 0)
+    .img-fluid {
+        box-shadow: -46px 32px 0px 0px $warning-opacity;
+    }
 }
 
 //Media Queries
-//Extra Large
-@media screen and (max-width: $xl) {
+@media screen and (min-width: $xl) {
     .row {
         margin: 0!important;
     }
     .square {
-        @include square ($secondary-opacity, 25%, 78%, 8%, 73%, 0)
+        @include square ($secondary-opacity, 25%, 78%, 5%, 65%, 0)
     }
     .square-contact {
-        @include square ($warning-opacity, 40%, 35%, 18%, 20%, 0)
+        @include square ($warning-opacity, 30%, 52%, 18%, 5%, 0)
     }
     .wp-caption-text {
         text-align: left!important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: $lg) 
+  and (max-device-width: $xl) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .square {
+        @include square ($secondary-opacity, 25%, 78%, 5%, 73%, 0)
+    }
+    .square-contact {
+       display: none;
     }
 }
 
@@ -78,13 +85,16 @@
 //Medium
 @media screen and (max-width: $md) {
     .square-contact {
-        @include square ($warning-opacity, 15%, 35%, 13%, 10%, 0)
+        @include square ($warning-opacity, 15%, 30%, 13%, 10%, 0)
+    }
+    .summary {
+        margin: 0;
     }
 }
 
-//Small
-@media screen and (max-width: $sm) {
-    .square-contact {
-        display: none;
-    }
-}
+// //Small
+// @media screen and (max-width: $sm) {
+//     .square-contact {
+//         display: none;
+//     }
+// }

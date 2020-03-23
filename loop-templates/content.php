@@ -10,8 +10,7 @@ defined('ABSPATH') || exit;
 ?>
 <div class='col-md-4 d-flex align-items-stretch mb-5'>
 	<article <?php post_class();?> id="post-<?php the_ID();?>">
-		<div class='square-blog'></div>
-		<div class='card'>
+		<div class='card card-blog'>
 			<a href="<?php the_permalink(); ?>">
 				<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 			</a>
