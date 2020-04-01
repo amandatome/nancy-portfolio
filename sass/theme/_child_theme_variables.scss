@@ -11,7 +11,7 @@
 //
 $background: #FDF8ED;
 $background-two: #e1f2fb;
-$primary: #79bac1;
+$primary: #499fa8;
 $secondary: #ED6A5A;
 $warning: #ffc25c;
 $tertiary:#f4dada;
@@ -34,20 +34,4 @@ $xl: 1200px;
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
     background-position: 0% $percentage;
-}
-
-//Square
-@mixin square ($color, $width, $height, $top, $left, $index) {
-    position: absolute;
-    background-color: $color;
-    width: $width;
-    height: $height;
-    top: $top;
-    left: $left;
-    z-index: $index;
-    &::after {
-      content: "";
-      display: block;
-      padding-bottom: 100%;
-  }
 }

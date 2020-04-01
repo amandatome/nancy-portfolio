@@ -18,9 +18,9 @@
   box-shadow: -48px 45px 0px -29px $warning-opacity;
 
 }
-.square-blog {
-  @include square ($warning-opacity, 25%, 100%, 2%, 0, -1)
-}
+// .square-blog {
+//   @include square ($warning-opacity, 25%, 100%, 2%, 0, -1)
+// }
 
 .page-title {
   @include underline ($warning-opacity, 75%);
@@ -32,6 +32,10 @@
   background-color: $white !important;
   border-top: none !important;
   padding: 0 !important;
+  .btn {
+    color: $white;
+    font-size: 18pt;
+  }
 }
 
 //Single Blog Page

@@ -23,19 +23,15 @@ $container = get_theme_mod( 'understrap_container_type' );
         <section class='overview pt-5 pb-5'>
 
             <div class='row'>
-                 <!-- <div class='square'></div> -->
-
                 <!--Summary Text -->
-                <div class='col-md-7 p-5 text-right summary'>
-                    <?php if (get_field('summary_title')) : ?>
-                        <h1 class='display-1'><?php the_field('summary_title');?></h1>
-                    <?php endif; ?>
+                <div class='col-xl-8 col-lg-7 col-md-12 p-5 text-right summary'>
+                        <h1 class='display-1'><?php the_field('summary_title'); ?></h1>
                     <?php if (get_field('summary')) : ?>
                         <?php the_field('summary');?>
                     <?php endif; ?>    
                 </div> <!-- .col -->
                 <!--Summary Image -->
-                <div class='col-md-5'>
+                <div class=' col-xl-4 col-lg-4 col-sm-12'>
                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large-rectangle', false, array('class' => 'featured-image')); ?> 
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -72,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
          <!-- Contact Section -->
         <section class='contact-section p-5'>
             <div class='row p-5'>
-                <div class='col-xl-5 '>
+                <div class='col-xl-5 col-sm-12'>
                     <?php $image = get_field('contact_image');
                         if ($image):
                             // Image variables.

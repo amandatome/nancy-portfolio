@@ -22,7 +22,7 @@ add_filter('excerpt_length', 'base_theme_excerpt_length');
  */
 function base_theme_read_more_link()
 {
-	return '<div class="card-footer"><a class="btn btn-secondary understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More',
+	return '<div class="card-footer"><a class="btn btn-secondary understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Continue Reading',
 	'understrap' ) . '</a></div>';
 }
 

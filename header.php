@@ -19,6 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
+	<title><?php the_title(); ?></title>
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,11 +31,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-xl navbar-light bg-primary">
+		<nav class="navbar navbar-expand-xl navbar-light bg-primary py-4">
 
-		<?php if ( 'container' == $container ) : ?>
+		<!-- <?php if ( 'container' == $container ) : ?>
 			<div class="container">
-		<?php endif; ?>
+		<?php endif; ?> -->
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -47,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?>
+							<a class="navbar-brand px-5" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?>
 							<?php if ( get_bloginfo( 'description' ) ) {
 								echo '<p class="tagline">' . esc_html( get_bloginfo( 'description' ) ) . '</p>';
 							} ?></a>
@@ -75,9 +76,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
+			<!-- <?php if ( 'container' == $container ) : ?>
+			</div>
+		.container 
+			<?php endif; ?> -->
 
 		</nav><!-- .site-navigation -->
 

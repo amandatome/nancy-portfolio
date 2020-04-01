@@ -1,3 +1,11 @@
+nav {
+  // .container {
+  //   margin: 2rem!important;
+  //   padding: 2rem!important
+  // }
+}
+
+
 .navbar-light .navbar-nav .nav-link {
   color: $background!important;
   font-size: 20px;
@@ -12,7 +20,7 @@
 a[title='Nancy Johnston']{
   font-weight: 800;
   font-size: 40px;
-  font-family: 'Playfair Display';
+  font-family: 'Petit Formal Script', cursive;
 }
 
 .tagline {
@@ -71,10 +79,10 @@ li {
   }
 }
 
-.page-id-119, .page-id-140, .page-id-32 {
+.page-id-119, .page-id-140, .page-id-32, .page-id-158 {
   background-color: $background;
-
 }
+
 .workshop-title, .resource-title {
   @include underline($secondary-opacity, 75%);
   font-size: 120px;
