@@ -11618,12 +11618,11 @@ figure.woocommerce-product-gallery__wrapper {
 
 .navbar-brand {
   font-family: "Quicksand";
-  color: #FDF8ED !important;
-  line-height: 2.5rem; }
+  color: #FDF8ED !important; }
 
 a[title='Nancy Johnston'] {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 2vw;
   font-family: 'Petit Formal Script', cursive; }
 
 .tagline {
@@ -11650,13 +11649,9 @@ li {
 .site-info {
   font-size: 20px !important; }
 
-.wt-fill-denim-tint {
-  fill: #499fa8 !important; }
-
 .single-workshops {
   background-color: #FDF8ED; }
   .single-workshops h1 {
-    font-size: 80px;
     font-weight: 800;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ED6A5A70));
     background-image: linear-gradient(#ED6A5A70);
@@ -11676,18 +11671,16 @@ li {
   background-color: #FDF8ED; }
 
 .workshop-title, .resource-title {
-  font-size: 80px;
   font-weight: 800;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ED6A5A70));
   background-image: linear-gradient(#ED6A5A70);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0% 75%;
-  font-size: 120px; }
+  font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .page-id-140 h2 {
-  font-size: 60pt;
-  font-size: 80px;
+  font-size: calc(52px + (52 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 800;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
   background-image: linear-gradient(#ffc25c70);
@@ -11697,6 +11690,10 @@ li {
 
 .page-id-140 .col-lg-12 {
   background-color: #fff; }
+
+@media screen and (max-width: 576px) {
+  .resource-title {
+    text-align: left !important; } }
 
 /*
 * Use existing Bootstrap 4 classes and
@@ -11722,6 +11719,9 @@ li {
     color: #dc3545;
     border: 1px solid #e9ecef; }
 
+body {
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); }
+
 .wrapper {
   padding: 0 !important; }
 
@@ -11731,11 +11731,11 @@ li {
 h1, h2, h3, h4 {
   font-family: 'Quicksand'; }
 
-h1 {
-  font-size: 10vw; }
-
 h2 {
-  font-size: 8vw; }
+  font-size: calc(45px + (45 - 20) * ((100vw - 300px) / (1600 - 300))); }
+
+h3 {
+  font-size: calc(42px + (42 - 20) * ((100vw - 300px) / (1600 - 300))); }
 
 p,
 li,
@@ -11744,7 +11744,6 @@ ul,
 ol,
 table,
 form {
-  font-size: 20px;
   font-family: 'Montserrat', sans-serif; }
 
 .btn,
@@ -11755,20 +11754,24 @@ form {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
 
+.wp-caption-text {
+  font-size: 16px;
+  text-align: left; }
+
 #maincontent {
   margin-top: 5rem; }
 
 .overview {
   background-color: #FDF8ED; }
   .overview h1 {
-    font-size: 80px;
     font-weight: 800;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ED6A5A70));
     background-image: linear-gradient(#ED6A5A70);
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
     background-position: 0% 88%;
-    font-family: 'Petit Formal Script', cursive; }
+    font-family: 'Petit Formal Script', cursive;
+    font-size: calc(50px + (50 - 20) * ((100vw - 300px) / (1600 - 300))); }
   .overview .featured-image {
     -webkit-box-shadow: 33px -26px 0px 0px #ED6A5A70;
             box-shadow: 33px -26px 0px 0px #ED6A5A70; }
@@ -11777,7 +11780,6 @@ form {
   margin: auto 0; }
 
 .services h2 {
-  font-size: 80px;
   font-weight: 800;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
   background-image: linear-gradient(#ffc25c70);
@@ -11797,43 +11799,29 @@ form {
 @media screen and (max-width: 1200px) {
   img {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .wp-caption-text {
+    text-align: center; } }
 
 @media screen and (max-width: 992px) {
   .row {
-    margin: 0 !important; }
-  img {
-    display: block;
-    margin: 0 auto; } }
-
-@media screen and (max-width: 768px) {
-  .row {
-    margin: 0 !important; }
-  img {
-    display: block;
-    margin: 0 auto; } }
+    margin: 0 !important; } }
 
 @media screen and (max-width: 576px) {
   .featured-image {
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
   .overview h1 {
-    font-size: 60px !important; }
+    text-align: left; }
   .overview p {
     text-align: left; }
   .services {
     padding: 0 !important; }
-    .services h2 {
-      font-size: 55px !important;
-      width: 100%; }
   .contact-section {
     padding: 0 !important; }
     .contact-section .img-fluid {
       -webkit-box-shadow: none !important;
-              box-shadow: none !important; }
-    .contact-section h2 {
-      font-size: 40px;
-      text-align: left; } }
+              box-shadow: none !important; } }
 
 .page-id-34 {
   background-color: #FDF8ED; }
@@ -11841,22 +11829,39 @@ form {
 .about-text {
   background-color: #f4dada; }
   .about-text h1 {
+    font-size: calc(100px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 800;
-    margin-top: -6.5rem;
-    pointer-events: none;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 100%;
-            flex: 1 100%; }
+    margin-top: -6.5rem; }
 
 .mission {
   background-color: #ffc25c70; }
   .mission h2 {
-    font-size: 9vw;
+    font-size: calc(80px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
     margin-top: -8.5rem;
-    pointer-events: none;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 100%;
-            flex: 1 100%; }
+    font-weight: 600; }
+
+@media screen and (max-width: 1200px) {
+  .mission h2 {
+    margin-top: -6.5rem; } }
+
+@media screen and (max-width: 768px) {
+  .mission h2 {
+    margin-top: -5.5rem; } }
+
+@media screen and (max-width: 576px) {
+  h1 {
+    margin-top: 0 !important; }
+  .mission h2 {
+    margin-top: -5rem;
+    font-size: 60px; }
+  .mission p {
+    text-align: justify; }
+  .mission .workshops-blog {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important; }
+  .mission #learn-more {
+    text-align: left !important; } }
 
 .blog {
   background-color: #FDF8ED; }
@@ -11865,24 +11870,30 @@ form {
   .blog h2 {
     font-size: 0 !important; }
     .blog h2 a {
-      font-size: 2rem; }
-  .blog h3 {
-    font-size: 1.25rem; }
-
-.card-blog {
-  -webkit-box-shadow: -48px 45px 0px -29px #ffc25c70;
-          box-shadow: -48px 45px 0px -29px #ffc25c70; }
+      font-size: calc(22px + (22 - 20) * ((100vw - 300px) / (1600 - 300))); }
 
 .page-title {
-  font-size: 80px;
   font-weight: 800;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
   background-image: linear-gradient(#ffc25c70);
   background-repeat: no-repeat;
   background-size: 100% 0.3em;
   background-position: 0% 75%;
-  font-size: 160px;
+  font-size: calc(100px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 2rem; }
+
+.entry-meta p {
+  font-weight: 800 !important; }
+
+.card img {
+  width: 100%;
+  height: 30vh !important;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.card-blog {
+  -webkit-box-shadow: -48px 45px 0px -29px #ffc25c70;
+          box-shadow: -48px 45px 0px -29px #ffc25c70; }
 
 .card-footer {
   background-color: #fff !important;
@@ -11896,21 +11907,29 @@ form {
 .single-post {
   background-color: #FDF8ED; }
   .single-post h1 {
-    font-size: 80px;
     font-weight: 800;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
     background-image: linear-gradient(#ffc25c70);
     background-repeat: no-repeat;
     background-size: 100% 0.3em;
-    background-position: 0% 88%; }
+    background-position: 0% 88%;
+    font-size: calc(55px + (55 - 18) * ((100vw - 300px) / (1600 - 300))); }
   .single-post h2 {
-    font-size: 1.5rem; }
+    font-size: calc(32px + (32 - 20) * ((100vw - 300px) / (1600 - 300))); }
   .single-post .post-image {
     z-index: 3;
     margin-left: 5rem; }
   .single-post .entry-content {
     background-color: #f4dada;
     padding: 4rem; }
+
+@media screen and (max-width: 1200px) {
+  .post-image {
+    margin-left: 2.75rem !important; } }
+
+@media screen and (max-width: 576px) {
+  .post-image {
+    margin-left: 0rem !important; } }
 
 .contact-image {
   background-color: #e1f2fb; }
@@ -11926,7 +11945,6 @@ form {
             flex: 1 100%; }
 
 #contact h2 {
-  font-size: 80px;
   font-weight: 800;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc25c70));
   background-image: linear-gradient(#ffc25c70);

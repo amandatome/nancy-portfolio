@@ -21,10 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             <!-- About -->
             <section id='about p-5'>
                 <div class='row no-gutters pt-5'>
-                    <div class='col-md-4 about-image'>
+                    <div class='col-md-4 col-sm-12 about-image d-flex align-items-stretch'>
                         <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'large-rectangle'); ?>
                     </div>    
-                    <div class='col-md-8 about-text p-4'>
+                    <div class='col-md-8 col-sm-12 about-text p-4'>
                         <h1 class='text-right'><?php the_title();?></h1>
                         <?php the_field('about_content');?>
                     </div>  
@@ -34,10 +34,9 @@ $container = get_theme_mod( 'understrap_container_type' );
             <section class='about-consulting py-5'>
                 <div class='row pt-5 no-gutters'>
                     <div class='col-md-12 p-5 mission'>
-                        <h2 class='display-3'><?php the_field('mission_heading');?></h2>
+                        <h2><?php the_field('mission_heading');?></h2>
                         <?php the_field('mission_statement');?>
-                        <h3 class='display-3 text-right'><?php the_field('learn_more');?></h3>
-
+                        <h3 class='text-right' id='learn-more'><?php the_field('learn_more');?></h3>
                         <!-- Buttons -->
                         <div class='workshops-blog pb-3 d-flex justify-content-end'>
                             <?php

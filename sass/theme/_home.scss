@@ -8,6 +8,7 @@
     h1 {
         @include underline ($secondary-opacity, 88%);
         font-family: 'Petit Formal Script', cursive;
+        font-size: calc(50px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
     }
     .featured-image{
         box-shadow: 33px -26px 0px 0px $secondary-opacity;
@@ -36,12 +37,15 @@
     }
 }
 
-//Media Queries
-
+//Media Queries***********************************
+//Extra Large
 @media screen and (max-width: $xl) {
     img {
         display: block;
         margin: 0 auto;
+    }
+    .wp-caption-text {
+        text-align: center;
     }
 }
 //Large
@@ -49,22 +53,7 @@
     .row {
         margin: 0!important;
     }
-    img {
-        display: block;
-        margin: 0 auto;
-    }
 }
-//Medium
-@media screen and (max-width: $md) {
-    .row {
-        margin: 0!important;
-    }
-    img {
-        display: block;
-        margin: 0 auto;
-    }
-}
-
 //Small
 @media screen and (max-width: $sm) {
     .featured-image{
@@ -72,7 +61,7 @@
     }
     .overview {
         h1 {
-            font-size: 60px!important;
+            text-align: left;
         }  
         p {
             text-align: left;
@@ -80,21 +69,11 @@
     }
     .services {
         padding: 0!important;
-        h2 {
-            font-size: 55px!important;
-            width: 100%
-        }
     }
     .contact-section {
         padding: 0!important;
         .img-fluid {
             box-shadow: none!important;
-         }
-         h2 {
-             font-size: 40px;
-             text-align: left;
-         }
+        }
     }
 }
-
-

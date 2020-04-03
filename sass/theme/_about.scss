@@ -5,20 +5,59 @@
 .about-text {
     background-color: $tertiary;
     h1 {
+        font-size: calc(100px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));        
         font-weight: 800;
         margin-top: -6.5rem;
-        pointer-events: none;
-        flex: 1 100%;
     }
 }
 
 .mission {
     background-color: #ffc25c70;
     h2 {
-        font-size: 9vw;
+        font-size: calc(80px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
         margin-top: -8.5rem;
-        pointer-events: none;
-        flex: 1 100%;
+        font-weight: 600;
     }
 }
 
+
+//Media Queries***********************************
+//Extra Large
+@media screen and (max-width: $xl) {
+    .mission {
+        h2 {
+            margin-top: -6.5rem;
+        }
+    }
+}
+
+//Medium
+@media screen and (max-width: $md) {
+    .mission {
+        h2 {
+            margin-top: -5.5rem;
+        }
+    }
+}
+
+//Small
+@media screen and (max-width: $sm) {
+    h1 {
+        margin-top: 0!important;
+    }
+    .mission {
+        h2 {
+            margin-top: -5rem;
+            font-size: 60px;
+        }
+        p {
+            text-align: justify;
+        }
+        .workshops-blog {
+            justify-content: start!important;
+        }
+        #learn-more {
+            text-align: left!important;
+        }
+    }  
+}

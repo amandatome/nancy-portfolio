@@ -4,28 +4,35 @@
     background-color: $white;
   }
   h2 {
-    font-size: 0!important;
+    font-size: 0 !important;
     a {
-      font-size: 2rem;
+        font-size: calc(22px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
     }
   }
-  h3 {
-    font-size: 1.25rem;
+}
+
+.page-title {
+  @include underline($warning-opacity, 75%);
+  font-size: calc(100px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 2rem;
+}
+
+.entry-meta {
+  p {
+    font-weight: 800 !important;
+  }
+}
+
+.card {
+  img {
+    width: 100%;
+    height: 30vh !important;
+    object-fit: cover;
   }
 }
 
 .card-blog {
   box-shadow: -48px 45px 0px -29px $warning-opacity;
-
-}
-// .square-blog {
-//   @include square ($warning-opacity, 25%, 100%, 2%, 0, -1)
-// }
-
-.page-title {
-  @include underline ($warning-opacity, 75%);
-  font-size: 160px;
-  margin-bottom: 2rem;
 }
 
 .card-footer {
@@ -42,17 +49,33 @@
 .single-post {
   background-color: $background;
   h1 {
-    @include underline ($warning-opacity, 88%)
+    @include underline($warning-opacity, 88%);
+    font-size: calc(55px + (55 - 18) * ((100vw - 300px) / (1600 - 300)));
   }
   h2 {
-    font-size: 1.5rem;
-  }
-  .post-image{
+    font-size: calc(32px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
+    }
+  .post-image {
     z-index: 3;
     margin-left: 5rem;
   }
   .entry-content {
     background-color: $tertiary;
     padding: 4rem;
+  }
+}
+
+//Media Queries***********************************
+//Extra large
+@media screen and (max-width: $xl) {
+  .post-image {
+    margin-left: 2.75rem !important;
+  }
+}
+
+//Small
+@media screen and (max-width: $sm) {
+  .post-image {
+    margin-left: 0rem !important;
   }
 }

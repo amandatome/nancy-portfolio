@@ -14,12 +14,12 @@ nav {
 .navbar-brand {
   font-family: "Quicksand";
   color: $background!important;
-  line-height: 2.5rem;
+  // line-height: 2.5rem;
 }
 
 a[title='Nancy Johnston']{
   font-weight: 800;
-  font-size: 40px;
+  font-size: 2vw;
   font-family: 'Petit Formal Script', cursive;
 }
 
@@ -57,10 +57,7 @@ li {
   font-size: 20px !important;
 }
 
-.wt-fill-denim-tint {
-  fill: $primary !important;
-}
-
+//Workshops
 .single-workshops {
   background-color: $background;
   h1 {
@@ -85,12 +82,13 @@ li {
 
 .workshop-title, .resource-title {
   @include underline($secondary-opacity, 75%);
-  font-size: 120px;
+  font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300)))!important;
 }
 
+//Resource Page
 .page-id-140 {
   h2 {
-    font-size: 60pt;
+    font-size: calc(52px + (52 - 20) * ((100vw - 300px) / (1600 - 300)));
     @include underline($warning-opacity, 88%);
   }
   .col-lg-12 {
@@ -98,3 +96,10 @@ li {
   }
 }
 
+//Media Queries***********************************
+//Small
+@media screen and (max-width: $sm) {
+  .resource-title {
+    text-align: left!important;
+  }
+}

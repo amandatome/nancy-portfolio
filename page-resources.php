@@ -20,12 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-
-        
-        
         <?php
-        function article()
-        {
 	    $article_query = new WP_Query(
 		array(
 			'post_type' => 'resources',
@@ -63,12 +58,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			} else { ?>
 		no posts found
 		<p>There are no cats 😿</p>
-<?php }
-}; ?>
-<?php article();?>
+<?php }; ?>
+
 <?php
-        function audio()
-        {
+
 	    $audio_query = new WP_Query(
 		array(
 			'post_type' => 'resources',
@@ -106,13 +99,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			} else { ?>
 		no posts found
 		<p>There are no audio files 😿</p>
-<?php }
-}; ?>
-<?php audio();?>
+	<?php }; ?>
 
-<?php
-        function video()
-        {
+	<?php
 	    $video_query = new WP_Query(
 		array(
 			'post_type' => 'resources',
@@ -151,17 +140,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			} else { ?>
 		no posts found
 		<p>There are no cats 😿</p>
-<?php }
-}; ?>
-<?php video(); ?>
+	<?php }; ?>
 
-
-
-
-
-
-
-        
         <?php endwhile; // end of the loop. ?>
         </div> <!-- .row -->
 

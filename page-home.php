@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class='row'>
                 <!--Summary Text -->
                 <div class='col-xl-8 col-lg-7 col-md-12 p-5 text-right summary'>
-                        <h1 class='display-1'><?php the_field('summary_title'); ?></h1>
+                        <h1><?php the_field('summary_title'); ?></h1>
                     <?php if (get_field('summary')) : ?>
                         <?php the_field('summary');?>
                     <?php endif; ?>    
@@ -40,10 +40,10 @@ $container = get_theme_mod( 'understrap_container_type' );
         <!-- Services -->                
         <section class='services p-5 mx-5'>
             <div class='row'>
-                <h2 class='display-3'><?php the_field('services_title');?></h2>
+                <h2><?php the_field('services_title');?></h2>
             </div> <!-- .row -->   
 
-            <div class='row justify-content-between py-3'>
+            <div class='row py-3'>
                 <?php
                     // check if the repeater field has rows of data
                     if( have_rows('services_info') ):
@@ -94,13 +94,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php
                     // End caption wrap.
                     if ($caption): ?>
-                            <p class="wp-caption-text text-center"><?php echo esc_html($caption); ?></p>
+                            <p class="wp-caption-text"><?php echo esc_html($caption); ?></p>
                             </div>
-                        <?php endif;?>
+                    <?php endif;?>
                     <?php endif;?>
                 </div><!-- .col --> 
                 <div class='col-xl-7 col-lg-12'>
-                    <h2 class='display-3'><?php the_field('contact_title');?></h2>
+                    <h2><?php the_field('contact_title');?></h2>
                     <?php the_field('contact_content');?>
                     <?php 
                         $link = get_field('contact_button');

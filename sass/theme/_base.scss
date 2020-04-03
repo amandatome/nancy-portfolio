@@ -1,6 +1,11 @@
+body {
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .wrapper {
   padding: 0!important;
 }
+
 .container-fluid {
   padding: 0!important;
 }
@@ -9,12 +14,12 @@ h1, h2, h3, h4 {
     font-family: 'Quicksand';
 }
 
-h1 {
-  font-size: 10vw;
+h2 {
+  font-size: calc(45px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
-h2 {
-  font-size: 8vw;
+h3 {
+  font-size: calc(42px + (42 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
 p,
@@ -24,7 +29,6 @@ ul,
 ol,
 table,
 form {
-  font-size: 20px;
   font-family: 'Montserrat', sans-serif; 
 }
 
@@ -34,4 +38,10 @@ form {
     transform: scale(1.1);
   }
 }
+
+.wp-caption-text {
+  font-size: 16px;
+  text-align: left;
+}
+
 

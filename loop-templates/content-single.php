@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 <article class='pb-2'<?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<div class='row pt-5'>
-		<div class='col-md-5'>
+		<div class='col-md-5 col-sm-12'>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<div class="entry-meta">
@@ -19,8 +19,8 @@ defined( 'ABSPATH' ) || exit;
 				</div><!-- .entry-meta -->
 			</header><!-- .entry-header -->
 		</div> <!-- .col -->
-		<div class='col-md-6 post-image'>
-			<?php echo get_the_post_thumbnail( $post->ID, 'medium-square' ); ?>
+		<div class='col-md-6 col-sm-12 post-image'>
+			<?php echo get_the_post_thumbnail( $post->ID, 'large-rectangle' ); ?>
 		</div> <!-- .col -->
 	</div><!-- .row -->
 	<div class='row'>

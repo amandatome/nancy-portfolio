@@ -8,11 +8,11 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 ?>
-<div class='col-md-4 d-flex align-items-stretch mb-5'>
+<div class='col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch mb-5'>
 	<article <?php post_class();?> id="post-<?php the_ID();?>">
 		<div class='card card-blog'>
-			<a href="<?php the_permalink(); ?>">
-				<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+			<a class='card-img-top' href="<?php the_permalink(); ?>">
+				<?php echo get_the_post_thumbnail($post->ID, "medium-rectangle"); ?>
 			</a>
 			<div class='card-body p-4'>
 				<header class="entry-header card-title">
@@ -23,7 +23,7 @@ defined('ABSPATH') || exit;
 				<?php if ('post' == get_post_type()): ?>
 
 					<div class="entry-meta">
-						<h3><?php the_time('F j, Y');?></h3>
+						<p><?php the_time('F j, Y');?></p>
 					</div><!-- .entry-meta -->
 
 				<?php endif;?>
@@ -40,6 +40,6 @@ defined('ABSPATH') || exit;
 					));?>
 				</div><!-- .entry-content -->
 			</div><!-- .card-body -->
-		</div><!--end card-->
+		</div><!--.card-->
 	</article><!-- #post-## -->
 </div>
