@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<!-- Do the left sidebar check and opens the primary div -->
 				<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-			
+	<?php get_template_part('categories'); ?>
 			<div class="row">
 
 				<?php if ( have_posts() ) : ?>
@@ -47,6 +47,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
+						
 						get_template_part( 'loop-templates/content', get_post_format() );
 						?>
 

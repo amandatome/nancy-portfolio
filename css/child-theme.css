@@ -11719,6 +11719,15 @@ li {
     color: #dc3545;
     border: 1px solid #e9ecef; }
 
+html #font__size--0 {
+  font-size: 100% !important; }
+
+html #font__size--1 {
+  font-size: 120% !important; }
+
+html #font__size--2 {
+  font-size: 150% !important; }
+
 body {
   font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))); }
 
@@ -11903,6 +11912,11 @@ form {
   .card-footer .wpcf7 input[type=submit], .wpcf7 .card-footer input[type=submit] {
     color: #fff;
     font-size: 18pt; }
+
+.categories {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .single-post {
   background-color: #FDF8ED; }

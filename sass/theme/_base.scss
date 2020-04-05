@@ -1,3 +1,15 @@
+html {
+	#font__size--0{
+		font-size: 100% !important;
+	}
+	#font__size--1{
+		font-size: 120% !important;
+	}
+	#font__size--2{
+		font-size: 150% !important;
+	}
+}
+
 body {
   font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
 }

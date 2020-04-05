@@ -53,7 +53,7 @@ function image_setup()
     set_post_thumbnail_size(120, 90, true);
     add_image_size('square', 150, 150, true);
     add_image_size('medium-rectangle', 500, 200, false);
-    // add_image_size('medium-square', 525, 525, false);
+    add_image_size('medium-square', 525, 525, false);
     add_image_size('large-rectangle', 700, 500, false);
 
 }

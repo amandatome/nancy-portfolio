@@ -8,6 +8,7 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 ?>
+
 <div class='col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch mb-5'>
 	<article <?php post_class();?> id="post-<?php the_ID();?>">
 		<div class='card card-blog'>
