@@ -3,10 +3,23 @@
   article {
     background-color: $white;
   }
-  h2 {
-    font-size: 0 !important;
-    a {
-        font-size: calc(22px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+  .entry-header {
+    h2 {
+      font-size: 0!important;
+      a {
+          font-size: calc(22px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+      }
+    }
+  }
+  
+  .post-categories {
+    li {
+      list-style-type: disc;
+      color: $primary;
+      a {
+        color: $white;
+        font-size: 18pt;
+      }
     }
   }
 }
@@ -47,6 +60,11 @@
 
 .categories {
   display: flex!important;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  h2 {
+    font-size: calc(32px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
 }
 
 //Single Blog Page

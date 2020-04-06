@@ -28,11 +28,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<main class="site-main" id="main">
 			<h1 class='page-title text-right'><?php single_post_title(); ?></h1>
-
+			
 				<!-- Do the left sidebar check and opens the primary div -->
 				<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			
 	<?php get_template_part('categories'); ?>
-			<div class="row">
+			<div class="row mt-3">
 
 				<?php if ( have_posts() ) : ?>
 

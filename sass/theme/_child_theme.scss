@@ -18,7 +18,6 @@ nav {
 .navbar-brand {
   font-family: "Quicksand";
   color: $background!important;
-  // line-height: 2.5rem;
 }
 
 a[title='Nancy Johnston']{
@@ -74,15 +73,6 @@ a[title='Nancy Johnston']{
   }
 }  
 
-
-//Text Size
-.js--accessibility__font__size{
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  list-style-type: none;
-}
-
 //Workshops
 .single-workshops {
   background-color: $background;
@@ -111,19 +101,7 @@ a[title='Nancy Johnston']{
   font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300)))!important;
 }
 
-//Resource Page
-.page-id-140 {
-  .resource-title {
-    @include underline($background-two, 75%);
-    font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300)))!important;
-  }
-  h2 {
-    font-size: calc(52px + (52 - 20) * ((100vw - 300px) / (1600 - 300)));
-  }
-  .col-lg-12 {
-    background-color: $white;
-  }
-}
+
 
 //Sitemap
 .html-sitemap {

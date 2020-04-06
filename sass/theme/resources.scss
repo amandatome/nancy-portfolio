@@ -1,0 +1,42 @@
+//Resource Page
+.page-id-140 {
+    .resource-title {
+      @include underline($background-two, 75%);
+      font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300)))!important;
+    }
+    h2 {
+      font-size: calc(52px + (52 - 20) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .col-lg-12 {
+      background-color: $white;
+    }
+  }
+  
+//Single Resources
+.single-resources{
+    background-color: $background;
+    h1 {
+        font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)))!important;
+        @include underline($warning, 75%);
+        }
+}  
+
+//Video container
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+} 
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

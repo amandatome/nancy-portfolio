@@ -58,47 +58,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			} else { ?>
 		no posts found
 		<p>There are no cats 😿</p>
-<?php }; ?>
-
-<?php
-
-	    $audio_query = new WP_Query(
-		array(
-			'post_type' => 'resources',
-			'posts_per_page' => -1,
-			'order' => 'ASC',
-			'tax_query' => array(
-				array(
-					'taxonomy' => 'resource_type', // what taxonomy are we querying by?
-					'field' => 'slug', // what field is the query? (other options are the term_id or name)
-					'terms'    => 'audio', // what specific term are we querying by?
-				)
-			)
-		)
-	);
-
-	if ($audio_query->have_posts()) { ?>
-		<?php while ($audio_query->have_posts()) {
-					$audio_query->the_post(); ?>
-		<?php
-            $audio = get_the_terms($post, 'resource_type');
-            foreach ($audio as $cat) {
-            $cat->name;
-            };?>
-			<div class='col-lg-12 shadow p-4 mb-2'>
-			<h2><?php echo $cat->name ?></h2>
-			<ul>
-				<li><a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-				</a></li>
-		</ul>
-			</div>
-		<?php }
-				/* Restore original Post Data */
-				wp_reset_postdata();
-			} else { ?>
-		no posts found
-		<p>There are no audio files 😿</p>
 	<?php }; ?>
 
 	<?php

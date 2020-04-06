@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <!--Summary Text -->
                 <div class='col-xl-8 col-lg-7 col-md-12 p-5 text-right summary'>
                         <h1><?php the_field('summary_title'); ?></h1>
-                    <?php if (get_field('summary')) : ?>
+                    <?php if (the_field('summary')) : ?>
                         <?php the_field('summary');?>
                     <?php endif; ?>    
                 </div> <!-- .col -->
