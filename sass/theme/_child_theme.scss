@@ -1,14 +1,18 @@
 nav {
-  // .container {
-  //   margin: 2rem!important;
-  //   padding: 2rem!important
-  // }
+  li {
+    &:hover  {
+      &:not(.active) {
+        border-bottom: solid 2px $background;
+      }
+    }
+    margin: 0 0.25rem;
+  }
 }
-
 
 .navbar-light .navbar-nav .nav-link {
   color: $background!important;
   font-size: 20px;
+
 }
 
 .navbar-brand {
@@ -39,22 +43,44 @@ a[title='Nancy Johnston']{
   border-bottom: solid 2px $background;  
 }
 
-li {
-  &:hover  {
-    &:not(.active) {
-      border-bottom: solid 2px $background;
-    }
-  }
-  margin: 0 0.25rem;
-}
+
 
 #wrapper-footer {
   background-color: $primary;
-  margin-top: -0.75wpx;
+  margin-top: -0.75px;
 }
 
-.site-info {
-  font-size: 20px !important;
+.site-text {
+  color: $background!important;
+}
+
+#menu-footer, #menu-social {
+    padding-left: 0!important;
+    li {
+      list-style-type: none;
+    }
+    a {
+      color: $background!important;
+      text-decoration: underline;
+    }
+  }
+
+#menu-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  li {
+    padding: 0.5rem;
+  }
+}  
+
+
+//Text Size
+.js--accessibility__font__size{
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style-type: none;
 }
 
 //Workshops
@@ -80,23 +106,58 @@ li {
   background-color: $background;
 }
 
-.workshop-title, .resource-title {
+.workshop-title {
   @include underline($secondary-opacity, 75%);
   font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300)))!important;
 }
 
 //Resource Page
 .page-id-140 {
+  .resource-title {
+    @include underline($background-two, 75%);
+    font-size: calc(60px + (60 - 18) * ((100vw - 300px) / (1600 - 300)))!important;
+  }
   h2 {
     font-size: calc(52px + (52 - 20) * ((100vw - 300px) / (1600 - 300)));
-    @include underline($warning-opacity, 88%);
   }
   .col-lg-12 {
     background-color: $white;
   }
 }
 
+//Sitemap
+.html-sitemap {
+  h1 {
+  font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)))!important;
+  @include underline($secondary-opacity, 75%);
+  }
+  h2{
+    font-size: calc(20px + (52 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
+  h3 {
+    font-size: calc(20px + (42 - 20) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .category {
+    list-style-type: none;
+    font-size: inherit;
+  }
+  #pages, .col-even {
+    box-shadow: -48px 45px 0px -29px $background-two;
+  }
+  #archives, .col-odd{
+    box-shadow: 33px -26px 0px 0px $background-two;
+  }
+}
+.sitemap {
+  background-color: $white;
+}
+
 //Media Queries***********************************
+// @media (min-width: $xl){
+// .container {
+//     max-width: 1400px!important;
+// }
+// }
 //Small
 @media screen and (max-width: $sm) {
   .resource-title {

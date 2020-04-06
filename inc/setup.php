@@ -46,3 +46,8 @@ function base_theme_custom_excerpt_more($output)
 	return $output;
 }
 add_filter('get_the_excerpt', 'base_theme_custom_excerpt_more');
+//Register additional menus
+register_nav_menus(array(
+	'footer' => 'Footer Navigation',
+	'social' => 'Social Menu'
+));

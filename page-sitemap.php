@@ -18,15 +18,16 @@ $container = get_theme_mod('understrap_container_type');
         <main class="site-main mt-5" id="main">
 
         <div class="html-sitemap">
+            <h1 class='text-right'><?php the_title(); ?></h1>
           <div class='row'>
        
-            <div class='col-md-6'>
+            <div class='col-md-6 p-3 sitemap border' id="pages">
                  <h2>Pages:</h2>
                  <ul class="sitemap-pages">
                      <?php wp_list_pages(array('exclude' => '119, 158', 'title_li' => '')); // Exclude pages by ID ?>
                  </ul>
             </div> 
-            <div class='col-md-6'>
+            <div class='col-md-6 p-3 sitemap border'>
    
                  <h2>Posts:</h2>
                  <ul>
@@ -44,7 +45,7 @@ query_posts('posts_per_page=-1&cat=' . $cat->cat_ID); //-1 shows all posts per c
         $category = get_the_category();
         if ($category[0]->cat_ID == $cat->cat_ID) {?>
 	                                             <li>
-	                                                 <?php the_time('M d, Y')?> &raquo; <a href="<?php the_permalink()?>"  title="<?php the_title();?>"><?php the_title();?></a> (<?php comments_number('0', '1', '%');?>)
+	                                                 <?php the_time('M d, Y')?> &raquo; <a href="<?php the_permalink()?>"  title="<?php the_title();?>"><?php the_title();?></a>
 	                                             </li>
 	                                         <?php
     }
@@ -57,17 +58,14 @@ query_posts('posts_per_page=-1&cat=' . $cat->cat_ID); //-1 shows all posts per c
                  <?php wp_reset_query();?>
     </div>
     </div> <!-- .row -->
-                 <h2>Archives:</h2>
-                 <ul class="sitemap-archives">
-                     <?php wp_get_archives('type=monthly&show_post_count=true');?>
-                 </ul>
-
-                 <h2 id="my-post-type">Resources</h2>
+    <div class='row mt-5'>
+        <div class='col-md-6 p-3 sitemap border'>
+        <h2 id="my-post-type">Resources</h2>
               <ul>
                 <?php
               $terms = get_terms('resource_type', 'orderby=name');
               foreach ($terms as $term) {
-                  echo '<li><h3>' . $term->name . '</h3>';
+                  echo '<h3>' . $term->name . '</h3>';
                   echo '<ul>';
                   $args = array(
                       'post_type' => 'resources',
@@ -89,6 +87,17 @@ query_posts('posts_per_page=-1&cat=' . $cat->cat_ID); //-1 shows all posts per c
                   echo '</li>';
               }?>
               </ul>
+</div>
+        <div class='col-md-6 p-3 sitemap border' id='archives'>
+        <h2>Archives:</h2>
+                 <ul class="sitemap-archives">
+                     <?php wp_get_archives('type=monthly&show_post_count=true');?>
+                 </ul>
+</div>
+</div>
+                
+
+            
              </div>
 
          </main>

@@ -17,7 +17,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<main class="site-main" id="main">
-
 <article class='pb-2'<?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<div class='row pt-5'>
 		<div class='col-md-12'>

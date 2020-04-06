@@ -13,7 +13,7 @@
 
 .page-title {
   @include underline($warning-opacity, 75%);
-  font-size: calc(100px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300)))!important;
   margin-bottom: 2rem;
 }
 

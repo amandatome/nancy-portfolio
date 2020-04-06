@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container-fluid" id="content" tabindex="-1">
 
         <main class="site-main" id="main">
-
+        
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         
         <!-- Overview Section -->

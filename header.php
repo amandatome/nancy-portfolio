@@ -34,9 +34,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-expand-xl navbar-light bg-primary py-4">
 
-		<!-- <?php if ( 'container' == $container ) : ?>
+		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
-		<?php endif; ?> -->
+		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<?php else : ?>
 
-							<a class="navbar-brand px-5" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?>
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?>
 							<?php if ( get_bloginfo( 'description' ) ) {
 								echo '<p class="tagline">' . esc_html( get_bloginfo( 'description' ) ) . '</p>';
 							} ?></a>
@@ -85,4 +85,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
-	<?php get_template_part('text-size');?>
+
+	<!-- <?php get_template_part('text-size');?> -->

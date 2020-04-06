@@ -8,7 +8,7 @@
     h1 {
         @include underline ($secondary-opacity, 88%);
         font-family: 'Petit Formal Script', cursive;
-        font-size: calc(50px + (50 - 20) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
     }
     .featured-image{
         box-shadow: 33px -26px 0px 0px $secondary-opacity;
