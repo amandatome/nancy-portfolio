@@ -1,0 +1,40 @@
+#wrapper-footer {
+    background-color: $primary;
+    margin-top: -0.75px;
+  }
+  
+  .site-text {
+    color: $background!important;
+  }
+  
+  #menu-footer, #menu-social {
+      padding-left: 0!important;
+      
+        margin-bottom: 0!important;
+      
+      li {
+        list-style-type: none;
+      }
+      a {
+        color: $background!important;
+        text-decoration: underline;
+      }
+    }
+  
+  #menu-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    li {
+      padding: 0.5rem;
+    }
+  }  
+  
+//Extra Large
+@media screen and (min-width: $xl) {
+ #wrapper-footer {
+    .container {
+      max-width: 1800px;
+    }
+  }
+ }

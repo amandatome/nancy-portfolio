@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <main class="site-main mt-5" id="main">
             <h1 class='resource-title text-right'><?php the_title(); ?></h1>
-
+			<?php echo wp_get_attachment_image(get_post_thumbnail_id(), false, array('class' => 'featured-image')); ?> 
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <?php
@@ -44,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             foreach ($articles as $cat) {
             $cat->name;
             };?>
-			<div class='col-lg-12 shadow p-4 mb-2'>
+			<div class='col-lg-12 shadow p-4 mb-2 mt-4'>
 			<h2><?php echo $cat->name ?></h2>
 			<ul>
 				<li><a href="<?php the_permalink(); ?>">

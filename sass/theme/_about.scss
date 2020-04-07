@@ -5,17 +5,17 @@
 .about-text {
     background-color: $tertiary;
     h1 {
-        font-size: calc(100px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));        
+        @include font(80, 120);     
         font-weight: 800;
         margin-top: -6.5rem;
     }
 }
 
 .mission {
-    background-color: #ffc25c70;
+    background-color: $warning-opacity;
     h2 {
-        font-size: calc(80px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
-        margin-top: -8.5rem;
+        @include font(70, 100);    
+        margin-top: -7.5rem;
         font-weight: 600;
     }
 }

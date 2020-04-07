@@ -30,6 +30,7 @@ ol,
 table,
 form {
   font-family: 'Montserrat', sans-serif; 
+  @include font (16, 20);
 }
 
 .btn {

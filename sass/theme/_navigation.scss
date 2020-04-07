@@ -1,0 +1,54 @@
+.navbar-light .navbar-nav .nav-link {
+  color: $background!important;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+nav {
+  .active {
+    border-bottom: solid 2px $background;
+  }
+  li {
+    &:hover {
+      &:not(.active) {
+        border-bottom: solid 2px $background;
+      }
+    }
+    margin: 0 0.25rem;
+  }
+}
+
+.navbar-brand {
+  font-family: "Quicksand";
+  color: $background !important;
+  font-weight: 900;
+}
+
+a[title="Nancy Johnston"] {
+  font-weight: 900;
+  @include font(24, 40);
+  font-family: "Petit Formal Script", cursive;
+}
+
+.tagline {
+  font-size: 30px;
+  @include font (20, 35);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 248, 237, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $background;
+}
+
+//Media Queries***********************************
+//Extra Large
+@media screen and (min-width: $xl) {
+ nav, #wrapper-footer {
+   .container {
+     max-width: 2000px;
+   }
+ }
+}

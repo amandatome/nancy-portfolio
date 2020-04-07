@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<div class="entry-meta">
-					<h2><?php the_time('F j, Y');?></h2>
+					<p><?php the_time('F j, Y');?></p>
 				</div><!-- .entry-meta -->
 			</header><!-- .entry-header -->
 		</div> <!-- .col -->

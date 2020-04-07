@@ -1,0 +1,16 @@
+//Sitemap
+.html-sitemap {
+    h1 {
+    @include font (30, 80);
+    @include underline($secondary-opacity, 75%);
+    }
+    h2 {
+      @include font (24, 52);
+    }
+    h3 {
+      @include font (22, 42);
+    }
+    .category {
+      list-style-type: none;
+    }
+  }

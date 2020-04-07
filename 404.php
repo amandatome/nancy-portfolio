@@ -15,74 +15,95 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="error-404-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+    <div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">
+        <div class="content-area" id="primary">
 
-			<div class="col-md-12 content-area" id="primary">
+            <main class="site-main" id="main">
 
-				<main class="site-main" id="main">
+                <section class="error-404 not-found">
 
-					<section class="error-404 not-found">
+                    <header class="page-header">
 
-						<header class="page-header">
+                        <h1 class="page-title letter-shadow text-right"><?php esc_html_e( '404' ); ?></h1>
 
-							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'understrap' ); ?></h1>
+                        <h2 class='text-center'>
+                            <?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'understrap' ); ?></h2>
 
-						</header><!-- .page-header -->
+                    </header><!-- .page-header -->
 
-						<div class="page-content">
+                    <div class="page-content">
+                        <div class='row border-bottom mt-5'>
+                            <div class='col-md-8'>
+                                <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'understrap' ); ?>
+                                </p>
+                            </div>
+                            <div class='col-md-4'>
+                                <?php get_search_form(); ?>
+                            </div>
+                            <!--.col-->
+                        </div>
+                        <!--.row-->
 
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'understrap' ); ?></p>
+                        <div class='row text-center border-bottom mt-5'>
+                            <div class='col-md-6'>
+                                <?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+                            </div>
+                            <div class='col-md-6'>
+                                <?php if ( understrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 
-							<?php get_search_form(); ?>
+                                <div class="widget widget_categories">
 
-							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+                                    <h2 class="widget-title">
+                                        <?php esc_html_e( 'Most Used Categories', 'understrap' ); ?></h2>
 
-							<?php if ( understrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+                                    <ul>
+                                        <?php
+											wp_list_categories(
+												array(
+													'orderby'    => 'count',
+													'order'      => 'DESC',
+													'show_count' => 1,
+													'title_li'   => '',
+													'number'     => 10,
+												)
+											);
+											?>
+                                    </ul>
 
-								<div class="widget widget_categories">
+                                </div><!-- .widget -->
 
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'understrap' ); ?></h2>
+                                <?php endif; ?>
+                            </div>
+                            <!--.col-->
+                        </div>
+                        <!--.row-->
 
-									<ul>
-										<?php
-										wp_list_categories(
-											array(
-												'orderby'    => 'count',
-												'order'      => 'DESC',
-												'show_count' => 1,
-												'title_li'   => '',
-												'number'     => 10,
-											)
-										);
-										?>
-									</ul>
+                        <div class='row text-center mt-5'>
+                            <div class='col-12'>
+                                <?php
 
-								</div><!-- .widget -->
+									/* translators: %1$s: smiley */
+									$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'understrap' ), convert_smilies( ':)' ) ) . '</p>';
+									the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
-							<?php endif; ?>
+									the_widget( 'WP_Widget_Tag_Cloud' );
+									?>
+                            </div>
+                            <!--.col-->
+                        </div>
+                        <!--.row-->
 
-							<?php
+                    </div><!-- .page-content -->
 
-							/* translators: %1$s: smiley */
-							$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'understrap' ), convert_smilies( ':)' ) ) . '</p>';
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+                </section><!-- .error-404 -->
 
-							the_widget( 'WP_Widget_Tag_Cloud' );
-							?>
+            </main><!-- #main -->
 
-						</div><!-- .page-content -->
+        </div><!-- #primary -->
 
-					</section><!-- .error-404 -->
 
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row -->
-
-	</div><!-- #content -->
+    </div><!-- #content -->
 
 </div><!-- #error-404-wrapper -->
 

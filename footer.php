@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 	<footer class="site-footer" id="colophon">
 
-		<div class="row">
+		<div class="row pt-3">
 
 			<div class="col-md-6">
 		

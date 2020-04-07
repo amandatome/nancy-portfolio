@@ -7,26 +7,16 @@
     h2 {
       font-size: 0!important;
       a {
-          font-size: calc(22px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+          @include font(20, 26);
+        }
       }
     }
   }
   
-  .post-categories {
-    li {
-      list-style-type: disc;
-      color: $primary;
-      a {
-        color: $white;
-        font-size: 18pt;
-      }
-    }
-  }
-}
 
 .page-title {
   @include underline($warning-opacity, 75%);
-  font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300)))!important;
+  @include font (40, 90);
   margin-bottom: 2rem;
 }
 
@@ -58,14 +48,28 @@
   }
 }
 
-.categories {
-  display: flex!important;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  h2 {
-    font-size: calc(32px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
+//Category dropdown
+.dropdown {
+  ul {
+    list-style-type: none;
+    padding: 0;
   }
 }
+
+//Archives
+.archive {
+  h1 {
+    text-align: right;
+  }
+  .entry-header {
+    h2 {
+      font-size: 0!important;
+      a {
+          @include font(20, 26);
+        }
+      }
+    }
+  }
 
 //Single Blog Page
 .single-post {

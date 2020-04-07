@@ -11,7 +11,7 @@
 //
 $background: #FDF8ED;
 $background-two: #b9e4fc90;
-$primary: #5571a3;
+$primary: #5B709F;
 $secondary: #ED6A5A;
 $warning: #ffc25c;
 $tertiary:#f4dada;
@@ -25,6 +25,17 @@ $sm: 576px;
 $md: 768px; 
 $lg: 992px; 
 $xl: 1200px;
+
+//Font size
+$h1: 80px;
+$h2: 54;
+$h3: 43;
+$a: 24;
+
+//Font Calc
+@mixin font ($fmin, $ft) {
+    font-size: calc(#{$fmin}px + (#{$ft} - #{$fmin}) * ((100vw - 300px) / (1600 - 300)));
+}
 
 //Underline
 @mixin underline ( $color, $percentage) {
